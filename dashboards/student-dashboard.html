@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard | TADREEBCOM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+
+<header class="navbar dashboard-navbar">
+  <a class="brand" href="../index.html">
+    <span class="logo">▥</span>
+    <span>TADREEBCOM</span>
+  </a>
+
+  <nav class="nav-links" id="navLinks">
+    <a class="active" href="student-dashboard.html">Dashboard</a>
+    <a href="../internships.html">Find Internships</a>
+    <a href="../companies.html">Companies</a>
+    <a href="student-applications.html">My Applications</a>
+    <a href="student-saved.html">Saved</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+      <span id="themeIcon">☾</span>
+    </button>
+    <button class="user-avatar">LH</button>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </div>
+</header>
+
+<main class="dashboard-page">
+  <section class="container">
+    <div class="dashboard-heading">
+      <h1>Welcome back, Laith.</h1>
+      <p>Here's what's happening with your internship search.</p>
+    </div>
+
+    <section class="stats dashboard-stats">
+      <article>
+        <span>Total applications</span>
+        <strong id="totalApplicationsCount">2</strong>
+      </article>
+
+      <article>
+        <span>Pending</span>
+        <strong id="pendingApplicationsCount">1</strong>
+      </article>
+
+      <article>
+        <span>Accepted</span>
+        <strong id="acceptedApplicationsCount">1</strong>
+      </article>
+
+      <article>
+        <span>Saved</span>
+        <strong id="savedCount">2</strong>
+      </article>
+    </section>
+
+    <section class="recommend-banner">
+      <div>
+        <h2>Recommended for Computer Science students</h2>
+        <p>Internships matched to your major.</p>
+      </div>
+      <a href="../internships.html" class="accent">See all</a>
+    </section>
+
+    <section class="recommend-grid">
+      <a class="internship-card card-link" href="../internships/internship-software-aramex.html">
+        <div class="card-head">
+          <div class="avatar">A</div>
+          <div>
+            <h3>Software Engineering Intern</h3>
+            <span class="company">Aramex</span>
+          </div>
+        </div>
+
+        <div class="tags">
+          <span class="tag">⌾ Amman</span>
+          <span class="tag work">Hybrid</span>
+          <span class="tag duration">3 months</span>
+          <span class="tag">Computer Science</span>
+        </div>
+
+        <p>Join the Aramex platform team to build and maintain Node.js microservices powering our shipment tracking experience. You will work...</p>
+
+        <div class="card-foot">
+          <span>5h ago</span>
+          <span class="view">View →</span>
+        </div>
+      </a>
+    </section>
+
+    <section class="recent-section">
+      <h2>Recent activity</h2>
+
+      <div class="activity-table">
+        <div class="table-row table-head applications-head">
+          <span>INTERNSHIP</span>
+          <span>COMPANY</span>
+          <span>STATUS</span>
+          <span>APPLIED</span>
+          <span></span>
+        </div>
+
+        <div class="table-row applications-row">
+          <span>Frontend Developer Intern</span>
+          <span>Orange Jordan</span>
+          <span><b class="status accepted">Accepted</b></span>
+          <span>5h ago</span>
+          <a class="table-view-btn" href="../internships/internship-frontend-orange.html">View</a>
+        </div>
+
+        <div class="table-row applications-row">
+          <span>Software Engineering Intern</span>
+          <span>Aramex</span>
+          <span><b class="status pending">Pending</b></span>
+          <span>5h ago</span>
+          <a class="table-view-btn" href="../internships/internship-software-aramex.html">View</a>
+        </div>
+      </div>
+    </section>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <a class="brand" href="../index.html"><span class="logo">▥</span><span>TADREEBCOM</span></a>
+      <p>The trusted internship platform for Jordan.</p>
+    </div>
+    <span>© 2026 TADREEBCOM. All rights reserved.</span>
+  </div>
+</footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/student.js"></script>
+</body>
+</html>

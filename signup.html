@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign up | TADREEBCOM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/signup.css" />
+</head>
+<body class="signup-page">
+
+<header class="navbar">
+  <a class="brand" href="index.html">
+    <span class="logo">▥</span>
+    <span>TADREEBCOM</span>
+  </a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="internships.html">Find Internships</a>
+    <a href="companies.html">Companies</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+      <span id="themeIcon">☾</span>
+    </button>
+    <a class="link-btn" href="login.html">Log in</a>
+    <a class="primary small" href="signup.html">Sign up</a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </div>
+</header>
+
+<main class="signup-layout with-navbar">
+  <section class="signup-left">
+    <a class="brand signup-brand" href="index.html">
+      <span class="logo">▥</span>
+      <span>TADREEBCOM</span>
+    </a>
+
+    <div class="signup-copy">
+      <h1>Join the largest internship community in Jordan.</h1>
+      <p>One profile, hundreds of opportunities. Get started in less than a minute.</p>
+
+      <ul>
+        <li>Free for students and companies</li>
+        <li>Verified employer accounts only</li>
+        <li>Built specifically for the Jordanian market</li>
+      </ul>
+    </div>
+
+    <p class="signup-note">Already have an account? <a href="login.html">Log in</a></p>
+  </section>
+
+  <section class="signup-right">
+    <form class="signup-box" id="signupForm">
+      <h2>Create an account</h2>
+      <p>Choose how you'll use TADREEBCOM.</p>
+
+      <div class="role-cards">
+        <button type="button" class="role-card active" data-role="student">
+          <span>♚</span>
+          <strong>I'm a student</strong>
+          <small>Find internships in Jordan</small>
+        </button>
+
+        <button type="button" class="role-card" data-role="company">
+          <span>▦</span>
+          <strong>I'm a company</strong>
+          <small>Hire top student talent</small>
+        </button>
+      </div>
+
+      <div class="form-grid">
+        <label>
+          Full name
+          <input type="text" placeholder="Enter your full name" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" placeholder="Enter your email" required>
+        </label>
+      </div>
+
+      <label>
+        Password
+        <input type="password" placeholder="Create a password" minlength="6" required>
+        <small>At least 6 characters.</small>
+      </label>
+
+      <div id="studentFields">
+        <div class="form-grid">
+          <label>
+            University
+            <select required>
+              <option value="">Select university</option>
+              <option>University of Jordan</option>
+              <option>Yarmouk University</option>
+              <option>JUST</option>
+              <option>Al-Balqa Applied University</option>
+            </select>
+          </label>
+
+          <label>
+            Major
+            <select required>
+              <option value="">Select major</option>
+              <option>Computer Science</option>
+              <option>Artificial Intelligence</option>
+              <option>Cyber Security</option>
+              <option>Data Science</option>
+              <option>Software Engineering</option>
+              <option>Computer Information Systems</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div id="companyFields" class="hidden">
+        <div class="form-grid">
+          <label>
+            Company name
+            <input type="text" placeholder="Enter company name">
+          </label>
+
+          <label>
+            Website
+            <input type="url" placeholder="https://">
+          </label>
+        </div>
+
+        <div class="form-grid">
+          <label>
+            Industry
+            <select>
+              <option value="">Select industry</option>
+              <option>Software Development</option>
+              <option>Cyber Security</option>
+              <option>Artificial Intelligence</option>
+              <option>Cloud Computing</option>
+              <option>Data & Analytics</option>
+              <option>IT Services</option>
+            </select>
+          </label>
+
+          <label>
+            City
+            <select>
+              <option value="">Select city</option>
+              <option>Amman</option>
+              <option>Irbid</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          About your company
+          <textarea placeholder="Brief description about your company..."></textarea>
+          <small>Company accounts require admin approval before posting internships.</small>
+        </label>
+      </div>
+
+      <button class="primary full" type="submit">Create account</button>
+
+      <p class="switch-text">Already have an account? <a href="login.html">Log in</a></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <a class="brand" href="index.html"><span class="logo">▥</span><span>TADREEBCOM</span></a>
+      <p>The trusted internship platform for Jordan.</p>
+    </div>
+    <span>© 2026 TADREEBCOM. All rights reserved.</span>
+  </div>
+</footer>
+  <script src="js/common.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
